@@ -7,3 +7,4 @@ se puede modificar esta  url quedara localhost:9200/{la nueva url}
 - localhost:9200/cupon/estadisticas llevara a la otra pagina.
 - recuerde importar el dumy de la base de datos antes de correr el proyecto
 - luego correr npm i una vez termine la instalacion correr npm start
+- el dump de la base de datos se encuentra en data/dump
