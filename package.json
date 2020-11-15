@@ -1,0 +1,35 @@
+{
+    "name": "cupon",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oscarHurtado/MontePlateado.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/oscarHurtado/MontePlateado/issues"
+    },
+    "homepage": "https://github.com/oscarHurtado/MontePlateado#readme",
+    "dependencies": {
+        "@zeit/next-css": "^1.0.1",
+        "config": "^3.3.1",
+        "express": "^4.17.1",
+        "mysql2": "^2.2.5",
+        "next": "^9.4.1",
+        "next-compose-plugins": "^2.2.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "sequelize": "^6.3.5"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
