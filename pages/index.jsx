@@ -1,6 +1,8 @@
 import { useState,useEffect } from 'react';
+import getConfig from "next/config";
 import  Table from '../components/table'
 import Search from '../components/search'
+const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
 
 const Index = () => {
     const [data, setdata] = useState({
@@ -17,7 +19,7 @@ const Index = () => {
 
     const getResult = async()=>{
       
-        const result = await fetch('http://localhost:9290/cupon/back/search',{method: 'POST',headers: {
+        const result = await fetch(publicRuntimeConfig.url+'/back/search',{method: 'POST',headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           },body:JSON.stringify({ keyword:data.search})});
